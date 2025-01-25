@@ -1,7 +1,7 @@
 import { OptionTypes } from "@/common/types";
 import Dropdown from "@/components/dropdown/Dropdown";
 import GameSection from "@/components/gameSection/GameSection";
-import React, { use, useState } from "react";
+import React, {  useState } from "react";
 
 const index = () => {
   const [minesCount, setMinesCount] = useState<number>(1);
