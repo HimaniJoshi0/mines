@@ -1,5 +1,5 @@
-import { OptionTypes } from "@/common/types";
 import React from "react";
+import { OptionTypes } from "@/common/types";
 
 interface DropdownTypes {
   options: OptionTypes[];

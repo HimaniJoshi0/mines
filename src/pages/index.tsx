@@ -1,9 +1,9 @@
+import React, {  useState } from "react";
 import { OptionTypes } from "@/common/types";
 import Dropdown from "@/components/dropdown/Dropdown";
 import GameSection from "@/components/gameSection/GameSection";
-import React, {  useState } from "react";
 
-const index = () => {
+const Home = () => {
   const [minesCount, setMinesCount] = useState<number>(1);
   const [start, setStart] = useState<boolean>(false);
   const [selectedTiles, setSelectedTiles] = useState<number[]>([]);
@@ -60,4 +60,4 @@ const index = () => {
   );
 };
 
-export default index;
+export default Home;

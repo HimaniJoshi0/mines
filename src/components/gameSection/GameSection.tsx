@@ -1,5 +1,5 @@
-import { TileTypes } from "@/common/types";
 import React, { useEffect, useState } from "react";
+import { TileTypes } from "@/common/types";
 
 interface GameSectionProps {
   minesCount: number;
