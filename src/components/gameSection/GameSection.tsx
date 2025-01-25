@@ -17,7 +17,7 @@ const GameSection = ({
   setSelectedTiles,
 }: GameSectionProps) => {
   const [tiles, setTiles] = useState<TileTypes[]>(
-    Array.from({ length: 25 }, (_, index) => {
+    Array.from({ length: 25 }, () => {
       return {
         type: "mine",
       };
@@ -28,7 +28,7 @@ const GameSection = ({
     if (start) {
       const mineArray: TileTypes[] = Array.from(
         { length: minesCount },
-        (_, index) => {
+        () => {
           return {
             type: "mine",
           };
@@ -37,7 +37,7 @@ const GameSection = ({
 
       const gemArray: TileTypes[] = Array.from(
         { length: 25 - minesCount },
-        (_, index) => {
+        () => {
           return {
             type: "gem",
           };
